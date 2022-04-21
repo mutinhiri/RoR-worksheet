@@ -1,2 +1,2 @@
-class Article < ApplicationController
+class Article < ApplicationRecord
 end
