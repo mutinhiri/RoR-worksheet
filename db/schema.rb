@@ -20,5 +20,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_21_194605) do
     t.datetime "updated_at", null: false
     t.text "decription"
   end
-
 end
