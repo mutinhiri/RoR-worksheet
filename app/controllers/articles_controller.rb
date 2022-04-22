@@ -10,4 +10,5 @@ class ArticlesController < ApplicationController
     end
 
     private
+        def 
 end 
