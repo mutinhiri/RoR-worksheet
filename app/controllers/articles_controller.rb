@@ -7,6 +7,7 @@ class ArticlesController < ApplicationController
         # render plain: params[:article].inspect
         # @article = Article.new(article_params)
         if @article.save
+            flash[:notice] = "Article successfully creatyesd "
             #do something
         else
             render 'new'
