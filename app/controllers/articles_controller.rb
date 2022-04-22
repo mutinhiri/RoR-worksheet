@@ -5,5 +5,6 @@ class ArticlesController < ApplicationController
 
     def create
         render plain: params[:article].inspect
+        @article = Article.new
     end
 end 
