@@ -8,4 +8,6 @@ class ArticlesController < ApplicationController
         @article = Article.new(article_params)
         @article.save
     end
+
+    private
 end 
