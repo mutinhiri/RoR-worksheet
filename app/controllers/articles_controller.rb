@@ -5,6 +5,6 @@ class ArticlesController < ApplicationController
 
     def create
         # render plain: params[:article].inspect
-        @article = Article.new
+        @article = Article.new(article_params)
     end
 end 
