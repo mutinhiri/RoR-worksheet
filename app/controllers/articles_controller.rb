@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
         @article = Article.new
     end
 
-    def create 
+    def create
+        render plain: params[]
     end
 end 
