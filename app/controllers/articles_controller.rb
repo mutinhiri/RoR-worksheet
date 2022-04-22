@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
         else
             render 'new'
         # redirect_to article_path(@article)
-
+        end
     end
 
     private
