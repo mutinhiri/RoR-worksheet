@@ -1,6 +1,6 @@
 <h1>Creating new file </h1>
 <% if @article.errors.any? %>
-<% @article.errors.full_messages.each do 
+<% @article.errors.full_messages.each do |msg| %>
 <% end %>
 
 <%= form_for @article do |f| %>
