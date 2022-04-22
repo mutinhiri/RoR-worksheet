@@ -7,7 +7,9 @@ class ArticlesController < ApplicationController
         # render plain: params[:article].inspect
         # @article = Article.new(article_params)
         if @article.save
-            #do something 
+            #do something
+        else
+            render 'new'
         # redirect_to article_path(@article)
 
     end
