@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
         # @article = Article.new(article_params)
         if @article.save
             flash[:notice] = "Article successfully creatyesd "
-            #do something
+            #do somethin
         else
             render 'new'
         # redirect_to article_path(@article)
