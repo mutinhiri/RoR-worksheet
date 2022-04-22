@@ -11,4 +11,5 @@ class ArticlesController < ApplicationController
 
     private
         def article_params
+        end
 end 
