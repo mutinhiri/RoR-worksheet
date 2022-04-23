@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
     end
 
     def update
-        @article =
+        @article = Article.find
     end
 
     def show
