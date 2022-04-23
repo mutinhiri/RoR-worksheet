@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-    de
+    
     def new
         @article = Article.new
     end
