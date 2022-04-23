@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-    before_action 
+    before_action :set_article
     def index
         @articles = Article.all
     end
