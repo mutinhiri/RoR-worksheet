@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
         @article = Article.find(params[:id])
         if @article.update
             flash[:notice] = "Article updated successfully"
-            redirect_to
+            redirect_to article_path(@article)
     end
 
     def show
