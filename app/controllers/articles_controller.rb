@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
     end
 
     def edit
-        @
+        @article 
     end
 
     def create
