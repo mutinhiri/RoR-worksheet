@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
     end
 
     def update
+        @article =
     end
 
     def show
