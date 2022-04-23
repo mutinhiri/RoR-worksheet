@@ -40,7 +40,7 @@ class ArticlesController < ApplicationController
     def destroy
         @article = Article.find(params[:id])
         @article.destroy
-        flash[:notice] 
+        flash[:notice] = "App destroyd successfully"
     end
 
     private
