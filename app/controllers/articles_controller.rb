@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
     def update
         @article = Article.find(params[:id])
         if @article.update
-            flash[:notice] = 
+            flash[:notice] = "Article"
     end
 
     def show
