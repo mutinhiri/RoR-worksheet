@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
     end
 
     def edit
-        @article = article.find
+        @article = Article.find
     end
 
     def create
