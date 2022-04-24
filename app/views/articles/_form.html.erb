@@ -7,6 +7,7 @@
                     <%= pluralize(@articles.error.count, "error") %> 
                     prohibited this article from being saved:
                 </h2>
+                <div class="panel-body">
     <h2>This is error message </h2>
 <ul>
     <% @article.errors.full_messages.each do |msg| %>
