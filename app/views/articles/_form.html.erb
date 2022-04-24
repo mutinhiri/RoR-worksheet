@@ -3,7 +3,8 @@
     <div class="col-xs-8 col-xs-offset-2">
         <div class="panel panel-danger">
             <div class="panel-heading">
-                <h2 class="panel-title">  
+                <h2 class="panel-title">
+                    <%= pluralize(@articles.error.count) %> 
     <h2>This is error message </h2>
 <ul>
     <% @article.errors.full_messages.each do |msg| %>
