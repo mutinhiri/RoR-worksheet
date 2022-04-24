@@ -1,6 +1,7 @@
 <% if @article.errors.any? %>
 <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
+    <div class="panel"
     <h2>This is error message </h2>
 <ul>
     <% @article.errors.full_messages.each do |msg| %>
