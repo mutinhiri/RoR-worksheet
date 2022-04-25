@@ -7,7 +7,7 @@
     <hr>
     <%=simple_format(@article.description) %>
     <div class="article-actions">
-        <%= link_to "Edit this article", edit_article_path(@article) %>
+        <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
         <%= link_to "back to articles listing", articles_path %>
     </div>
 </div>
