@@ -1,4 +1,4 @@
-class CrateUsers < ActiveRecord::Migration[7.0]
+class CreateUsers < ActiveRecord::Migration[7.0]
   def change
   end
 end
