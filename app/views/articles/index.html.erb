@@ -10,7 +10,7 @@
                         <%= truncate(article.description, length: 100) %>
                         <small> Created by: <%= article.user.username %>
                                             <%= time_ago_in_words(article.created_at) %>, ago,
-                                Last updated at: <%= time_ago_in_words(article.updated_at)
+                                Last updated at: <%= time_ago_in_words(article.updated_at) %> 
                         <div class="article-actions">
                             <%= link_to "Edit this article", edit_article_path(article), class: "btn btn-xs btn-primary" %>
                             <%= link_to "Delete this article", articles_path(article), class: "btn btn-xs btn-danger", method: :delete %>
