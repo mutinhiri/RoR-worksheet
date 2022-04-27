@@ -19,7 +19,9 @@ class UsersController < ApplicationController
 
         def update
             @user = User.find(params[:id])
-            if @user.update 
+            if @user.update
+            else
+                render
         end
     end
 
