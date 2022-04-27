@@ -12,6 +12,9 @@ class UsersController < ApplicationController
         else
             render 'new'
         end
+
+        def edit
+        end
     end
 
 
