@@ -18,7 +18,7 @@ class UsersController < ApplicationController
         end
 
         def update
-            @user = User.find
+            @user = User.find(params[:id])
         end
     end
 
