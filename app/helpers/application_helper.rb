@@ -1,5 +1,5 @@
 module ApplicationHelper
     def gravatar_for(user)
-        gravatar_id
+        gravatar_id = Digest::
     end
 end
