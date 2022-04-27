@@ -21,7 +21,7 @@ class UsersController < ApplicationController
             @user = User.find(params[:id])
             if @user.update
             else
-                render
+                render 'new'
         end
     end
 
