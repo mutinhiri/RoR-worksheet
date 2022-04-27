@@ -8,5 +8,5 @@ class UsersController < ApplicationController
     end
 
 
-    def use 
+    private 
 end
