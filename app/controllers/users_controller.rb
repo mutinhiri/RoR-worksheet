@@ -24,6 +24,7 @@ class UsersController < ApplicationController
                 flash[:success] = 'USEr updated success '
             else
                 render 'edit'
+            end
         end
     
 
