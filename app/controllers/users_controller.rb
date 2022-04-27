@@ -18,6 +18,7 @@ class UsersController < ApplicationController
         end
 
         def update
+            @user = User.find
         end
     end
 
