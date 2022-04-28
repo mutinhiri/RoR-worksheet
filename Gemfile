@@ -40,6 +40,7 @@ gem "jbuilder"
 gem "tzinfo-data"
 gem 'bcrypt', '~> 3.1.7'
 gem 'will-paginate', '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
