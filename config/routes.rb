@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :articles
   resources :users, :except => [:new]
   get 'signup', to: 'users#new'
-  get 'login' 
+  get 'login', to: 
   # post 'users', to: 'users#create'
 
 end
