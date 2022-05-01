@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
 
     def require_user
         if !logged_in?
-            flash{:danger}
+            flash[:danger]
     end
 end
