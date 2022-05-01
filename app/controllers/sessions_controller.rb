@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
         if user && user.authenticate(params[:session][:password])
         else
             render 'new'
-            flash.now[:danger] = ''
+            flash.now[:danger] = 'There was an error'
         end
     end
 
