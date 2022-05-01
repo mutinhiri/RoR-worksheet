@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
         if user && user.authenticate(params[:session][:password])
         else
             render 'new'
+        end
     end
 
     def destroy
