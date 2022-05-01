@@ -11,5 +11,6 @@ class ApplicationController < ActionController::Base
     end
 
     def require_user
+        if !logged_in?
     end
 end
