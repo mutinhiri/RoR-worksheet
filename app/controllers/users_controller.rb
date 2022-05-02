@@ -51,5 +51,6 @@ class UsersController < ApplicationController
     def require_same_user
         if !logged_in? && current_user != @user
             flash[:danger] = "Restriction access"
+        end
     end
 end
