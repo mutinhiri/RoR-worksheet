@@ -60,5 +60,6 @@ class ArticlesController < ApplicationController
         end
 
         def require_same_user
+            if current_user 
         end
 end 
