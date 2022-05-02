@@ -49,5 +49,6 @@ class UsersController < ApplicationController
     end
 
     def require_same_user
+        if !logged_in? &&
     end
 end
