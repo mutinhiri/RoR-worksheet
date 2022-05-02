@@ -40,6 +40,8 @@ class UsersController < ApplicationController
 
         def destroy
             @user = User.find(params[:id])
+            @user.destroy
+            flash[:danger] = "user and all articles have been deleted "
         end
     
 
