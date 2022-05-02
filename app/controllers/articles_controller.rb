@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
     before_action :set_article, only: [:edit, :update, :show, :destroy]
-    before_action 
+    before_action :require_user, except:
 
     def index
         @articles = Article.all
@@ -38,8 +38,7 @@ class ArticlesController < ApplicationController
         end
     end
 
-    def show
-        
+    def show   
     end
 
     def destroy
