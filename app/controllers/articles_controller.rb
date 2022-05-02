@@ -61,5 +61,6 @@ class ArticlesController < ApplicationController
 
         def require_same_user
             if current_user != @article.user
+                flash[:danger] = "you can only delete own article"
         end
 end 
