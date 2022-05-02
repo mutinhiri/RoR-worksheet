@@ -60,6 +60,6 @@ class ArticlesController < ApplicationController
         end
 
         def require_same_user
-            if current_user 
+            if current_user != @article.user
         end
 end 
