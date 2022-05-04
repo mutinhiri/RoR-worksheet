@@ -8,4 +8,7 @@ class CategoryTest < ActiveSupport::TestCase
     test "Category should be valid " do
         assert @category.valid?
     end
+
+    test "name should not be empty" do
+    end
 end
