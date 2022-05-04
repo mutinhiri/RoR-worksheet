@@ -21,6 +21,7 @@ class CategoryTest < ActiveSupport::TestCase
     end
 
     test "name should not be too long" do
+        @category.name = "a" * 26
         
     end
 
