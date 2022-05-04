@@ -1,3 +1,3 @@
 require "test_helper"
 
-class CreateCategoriesTest < 
+class CreateCategoriesTest < ActionDispatch
