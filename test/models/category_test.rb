@@ -11,5 +11,6 @@ class CategoryTest < ActiveSupport::TestCase
 
     test "name should not be empty" do
         @category.name = ""
+        assert_not @category.valid?
     end
 end
