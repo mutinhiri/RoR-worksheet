@@ -6,4 +6,6 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
 
     test "should get test " do
     end
+
+    test ""
 end
