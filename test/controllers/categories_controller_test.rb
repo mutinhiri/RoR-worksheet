@@ -12,5 +12,6 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     test "Should get show" do
+        get category_path
     end
 end
