@@ -1,3 +1,4 @@
 require "test_helper"
 
-class CategoriesControllerTest <
+class CategoriesControllerTest < ActionDispatch::IntegrationTest
+end
