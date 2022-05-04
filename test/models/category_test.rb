@@ -22,4 +22,7 @@ class CategoryTest < ActiveSupport::TestCase
 
     test "name should not be too long" do
     end
+
+    test "name shoud not be too short" do
+    end 
 end
