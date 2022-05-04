@@ -18,4 +18,5 @@ class CategoryTest < ActiveSupport::TestCase
         @category.save
         category2 = Category.new(name: "sports")
         assert_not category2.valid?
+    end
 end
