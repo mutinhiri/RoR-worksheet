@@ -8,6 +8,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
 
     test "should get test " do
         get new_category_path
+        assert_response 
     end
 
     test "Should get show" do
