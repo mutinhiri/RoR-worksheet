@@ -1,6 +1,9 @@
 require "test_helper"
 
 class CategoriesControllerTest < ActionDispatch::IntegrationTest
+    def setup
+    end
+    
     test "Should get categories index " do
         get categories_path
         assert_response :success
