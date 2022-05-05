@@ -21,5 +21,6 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     test "should redirect create when admin not logged in" do
+        assert_no_difference
     end
 end
