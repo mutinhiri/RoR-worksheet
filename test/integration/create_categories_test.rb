@@ -19,6 +19,6 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
             post categories_path, params: { category: {name: " "}}
         end
         assert_template "categories/new"
-        assert_match "sports", response.body
+        assert_select ""
     end
 end
