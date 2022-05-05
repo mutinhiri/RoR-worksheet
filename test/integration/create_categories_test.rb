@@ -3,7 +3,7 @@ require "test_helper"
 class CreateCategoriesTest < ActionDispatch::IntegrationTest
 
     def setup
-        @user = User.create
+        @user = User.create(username: 'john', passwprd:)
         end
 
     test "get new categories form and create category" do
