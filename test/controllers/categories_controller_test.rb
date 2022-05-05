@@ -19,4 +19,6 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
         get category_path(@category)
         assert_response :success
     end
+
+    test "should redirect create when admin nit logged in"
 end
