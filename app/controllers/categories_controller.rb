@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
     end 
 
     def create
-        @category 
+        @category = Category.new(category_params)
     end
 
     def show 
