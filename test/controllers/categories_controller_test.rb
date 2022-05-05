@@ -12,7 +12,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
     end
 
     test "should get new " do
-        sign_in_as 
+        sign_in_as(@usetr, "password")
         get new_category_path
         assert_response :success
     end
