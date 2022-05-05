@@ -31,7 +31,7 @@ class CategoriesController < ApplicationController
     end
 
     def require_admin
-        if !logged_in? || (logged_in? and !current_user)
+        if !logged_in? || (logged_in? and !current_user.admin)
             flash[:danger] = "Onky admins can perfom that action"
             redirect_to categories_path
         end
