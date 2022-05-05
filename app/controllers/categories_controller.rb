@@ -33,5 +33,6 @@ class CategoriesController < ApplicationController
     def require_admin
         if !logged_in?
             flash[:danger] = "Onky admins can perfom that action"
+            redirect_to
     end
 end
