@@ -22,5 +22,6 @@ class CategoriesController < ApplicationController
     private 
 
     def category_params
+        params.require()
     end
 end
