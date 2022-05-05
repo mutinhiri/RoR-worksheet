@@ -31,6 +31,7 @@ class CategoriesController < ApplicationController
     end
 
     def require_admin
-        if !logged_in
+        if !logged_in?
+            flash[:danger] = 
     end
 end
