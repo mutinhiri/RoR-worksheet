@@ -22,6 +22,6 @@ class CategoriesController < ApplicationController
     private 
 
     def category_params
-        params.require()
+        params.require(:category.permit)
     end
 end
