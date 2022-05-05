@@ -4,5 +4,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
     def setup
         @category = Category.create(name: "sports")
         @category2 = Category.create(name: "programming")
+
+        test "Should show "
     end
 end
