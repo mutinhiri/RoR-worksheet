@@ -22,4 +22,5 @@ class CategoriesController < ApplicationController
     private 
 
     def category_params
+    end
 end
