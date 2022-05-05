@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
     def index
-        @categories = Category.paginate()
+        @categories = Category.paginate(page: params[:page])
     end
 
     def new
