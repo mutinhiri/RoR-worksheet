@@ -6,6 +6,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
         @category2 = Category.create(name: "programming")
 
         test "Should show categories listing" do
+            get categories_path
         end 
     end
 end
