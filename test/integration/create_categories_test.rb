@@ -5,7 +5,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
         get new_category_path
         assert_template "categories/new"
         assert_difference "Category.count", 1 do
-            post_via redirect
+            post_via redirect categories_path
         end
     end
 end
