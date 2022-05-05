@@ -8,6 +8,6 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
             post categories_path, params: { category: {name: "sports"}}
             follow_redirect
         end
-        assert_template
+        assert_template "categories/index"
     end
 end
