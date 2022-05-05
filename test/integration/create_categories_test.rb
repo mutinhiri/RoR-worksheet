@@ -17,9 +17,8 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
         assert_template "categories/new"
         assert_no_difference "Category.count", 1 do
             post categories_path, params: { category: {name: " "}}
-            follow_redirect
         end
-        assert_template "categories/index"
+        assert_template "categories/new"
         assert_match "sports", response.body
     end
 end
