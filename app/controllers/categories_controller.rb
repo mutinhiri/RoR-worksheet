@@ -31,5 +31,6 @@ class CategoriesController < ApplicationController
     end
 
     def require_admin
+        if !logged_in
     end
 end
