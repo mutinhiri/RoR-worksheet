@@ -8,7 +8,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
         test "Should show categories listing" do
             get categories_path
             assert_template 'categories/index'
-            assert_select "a[href=?]", category_path(@category)
+            assert_select "a[href=?]", category_path(@category), text: @category.name
         end 
     end
 end
