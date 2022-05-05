@@ -7,6 +7,7 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
 
         test "Should show categories listing" do
             get categories_path
+            assert_template
         end 
     end
 end
