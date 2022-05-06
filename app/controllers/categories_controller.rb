@@ -21,7 +21,8 @@ class CategoriesController < ApplicationController
 
     end
 
-    def show 
+    def show
+        @category = Category.find(params[:id])
     end
 
     private 
