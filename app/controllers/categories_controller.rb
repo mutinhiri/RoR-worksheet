@@ -27,6 +27,7 @@ class CategoriesController < ApplicationController
 
     def update
         @category = Category.find(params[:id])
+        if @category
     end
 
     def show
