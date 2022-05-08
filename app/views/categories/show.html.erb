@@ -1,5 +1,5 @@
 <h1 align="center"> <%= "Category:" + @category.name %> </h1>
-<% if logged_in? %>
+<% if logged_in? and current_user %>
 <div class="row">
     <span class="badge"><%= link_to "edit category name", edit_category_path(@category) %></span>
 </div>
