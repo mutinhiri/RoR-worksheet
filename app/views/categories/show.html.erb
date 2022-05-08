@@ -1,6 +1,7 @@
 <h1 align="center"> <%= "Category:" + @category.name %> </h1>
 <div class="row">
-<span class="badge"><%= link_to "edit category name", edit_category_path(@category) %></span>
+    <span class="badge"><%= link_to "edit category name", edit_category_path(@category) %></span>
+</div>
 
 <%= render 'articles/article' %>
    
