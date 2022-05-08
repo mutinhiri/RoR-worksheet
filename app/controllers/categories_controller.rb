@@ -31,6 +31,7 @@ class CategoriesController < ApplicationController
 
         else 
             render 'edit'
+        end
     end
 
     def show
